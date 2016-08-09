@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  quiz: one
+  was_winner: false
+
+two:
+  user: two
+  quiz: two
+  was_winner: false
