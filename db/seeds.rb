@@ -6,61 +6,112 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Quiz.create!([
-  name: 'Olympics'
-])
+Quiz.destroy_all
 
-category_list = [
-  [ 1, "History", "blue" ],
-  [ 1, "Mascot", "black" ],
-  [ 1, "Geography", "red" ],
-  [ 1, "Winter Sports", "yellow" ],
-  [ 1, "Summer Sports", "green" ]
+categories_attributes = [
+  {subject: "History", color: "blue", questions_attributes: [
+    {text: "Which year did Vancouver host the Winter Olympics?", choices_attributes: [
+      {text: "2010", is_correct: true}, 
+      {text: "2006", is_correct: false}, 
+      {text: "2014", is_correct: false}, 
+      {text: "2002", is_correct: false}
+      ]
+    }, 
+    {text: "Which year did Beijing host the Summer Olympics?", choices_attributes: [
+      {text: "2000", is_correct: false}, 
+      {text: "2008", is_correct: true}, 
+      {text: "2004", is_correct: false}, 
+      {text: "2012", is_correct: false}
+      ] 
+    }, 
+    {text: "In which Olympics did the world-famous American boxer Muhammad Ali win the light heavyweight boxing title?", choices_attributes: [
+      {text: "Tokyo 1964", is_correct: false},
+      {text: "Montreal 1976", is_correct: false},
+      {text: "London 1948", is_correct: false},
+      {text: "Rome 1960", is_correct: true}
+      ]
+    }
+  ]},
+  {subject: "Mascot", color: "black", questions_attributes: [
+    {text: "Vinicius is a mix of different Brazilian ______", choices_attributes: [
+      {text: "cartoon characters", is_correct: false},
+      {text: "animals", is_correct: true},
+      {text: "celebrities", is_correct: false},
+      {text: "historical figures", is_correct: false}
+    ]},
+    {text: "Sochi had three mascots; The Hare, The Polar Bear and ______?", choices_attributes: [
+      {text: "The Leopard", is_correct: true},
+      {text: "The Tiger", is_correct: false},
+      {text: "The Seal", is_correct: false},
+      {text: "The Raccoon", is_correct: false}
+    ]},
+    {text: "What kind of animal is Hodori, the mascot of Seoul 1988 Olympics?", choices_attributes: [
+      {text: "Lion", is_correct: false},
+      {text: "Tiger", is_correct: true},
+      {text: "Panda Bear", is_correct: false},
+      {text: "Crane", is_correct: false}
+    ]},
+  ]},
+  {subject: "Geography", color: "red", questions_attributes: [
+    {text: "Sochi is located in which country?", choices_attributes: [
+      {text: "Norway", is_correct: false},
+      {text: "South Korea", is_correct: false},
+      {text: "Russia", is_correct: true},
+      {text: "Japan", is_correct: false}
+    ]},
+    {text: "Lillehammer is located in which country?", choices_attributes: [
+      {text: "Norway", is_correct: true},
+      {text: "South Korea", is_correct: false},
+      {text: "Russia", is_correct: false},
+      {text: "Japan", is_correct: false}
+    ]},
+    {text: "Nagano is located in which country?", choices_attributes: [
+      {text: "Norway", is_correct: false},
+      {text: "South Korea", is_correct: false},
+      {text: "Russia", is_correct: false},
+      {text: "Japan", is_correct: true}
+    ]}
+  ]},
+  {subject: "Winter Sports", color: "yellow", questions_attributes: [
+    {text: "What are the two sports that make up the Biathlon?", choices_attributes: [
+      {text: "horse-backing riding and archery", is_correct: false},
+      {text: "speed skating and rifle shooting", is_correct: false},
+      {text: "cross-country skiing and rifle shooting", is_correct: true},
+      {text: "freestyle skiing and ski jump", is_correct: false}
+    ]},
+    {text: "How many players are in a curling team?", choices_attributes: [
+      {text: "4", is_correct: true},
+      {text: "3", is_correct: false},
+      {text: "5", is_correct: false},
+      {text: "6", is_correct: false}
+    ]},
+    {text: "Ice Hockey orginated from which country?", choices_attributes: [
+      {text: "Russia", is_correct: false},
+      {text: "Canada", is_correct: true},
+      {text: "USA", is_correct: false},
+      {text: "Sweden", is_correct: false}
+    ]},
+  ]},
+  {subject: "Summer Sports", color: "green", questions_attributes: [
+    {text: "As of 2016, how many sports are played in the Summer Olympics?", choices_attributes: [
+      {text: "26", is_correct: false}, 
+      {text: "28", is_correct: true}, 
+      {text: "22", is_correct: false}, 
+      {text: "32", is_correct: false}
+    ]},
+    {text: "The modern pentathlon comprises of pistol shooting, fencing, swimming, horse riding and ______?", choices_attributes: [
+      {text: "cycling", is_correct: false},
+      {text: "sailing", is_correct: false},
+      {text: "running", is_correct: true},
+      {text: "golf", is_correct: false}
+    ]},
+    {text: "Including the goalkeeper, how many football players from one team play at any given time?", choices_attributes: [
+      {text: "9", is_correct: false},
+      {text: "10", is_correct: false},
+      {text: "8", is_correct: false},
+      {text: "11", is_correct: true}
+    ]}
+  ]}
 ]
-category_list.each do |quiz_id, subject, color|
-  Category.create!( quiz_id: quiz_id, subject: subject, color: color )
-end
-
-
-question_list = [
-  [ 1, "Which year did Vancouver host the Winter Olympics?" ],
-  [ 1, "Which year did Beijing host the Summer Olympics?" ],
-  [ 1, "In which Olympics did the world-famous American boxer Muhammad Ali win the light heavyweight boxing title?" ],
-  [ 2, "Vinicius is a mix of different Brazilian ______" ],
-  [ 2, "Sochi had three mascots; The Hare, The Polar Bear and ______?" ],
-  [ 2, "What kind of animal is Hodori, the mascot of Seoul 1988 Olympics?" ],
-  [ 3, "Sochi is located in which country?" ],
-  [ 3, "Lillehammer is locate in which country?" ],
-  [ 3, "Nagano is located in which country?" ],
-  [ 4, "What are the two sports that make up the Biathlon?" ],
-  [ 4, "How many players are in a curling team?" ],
-  [ 4, "Ice Hockey orginated from which country?" ],
-  [ 5, "As of 2016, how many sports are played in the Summer Olympics?" ],
-  [ 5, "The modern pentathlon comprises of pistol shooting, fencing, swimming, horse riding and ______?" ],
-  [ 5, "Including the goalkeeper, how many football players from one team play at any given time?" ]
-]
-question_list.each do |category_id, text|
-  Question.create!( category_id: category_id, text: text )
-end
-
-
-choice_list = [
-  [ 1, "2010", true ], [ 1, "2006", false ], [ 1, "2014", false ], [ 1, "2002", false],
-  [ 2, "2000", false ], [ 1, "2008", true ], [ 2, "2004", false ], [ 2, "2012", false],
-  [ 3, "Tokyo 1964", false ], [ 3, "Montreal 1976", false ], [ 3, "London 1948", false ], [ 3, "Rome 1960", true], 
-  [ 4, "cartoon characters", false ], [ 4, "animals", true ], [ 4, "celebrities", false ], [ 4, "historical figures", false ],
-  [ 5, "The Leopard", true ], [ 5, "The Tiger", false ], [ 5, "The Seal", false ], [ 5, "The Raccoon", false], 
-  [ 6, "Lion", false ], [ 6, "Tiger", true ], [ 6, "Bear", false ], [ 6, "Crane", false ],
-  [ 7, "Norway", false ], [ 7, "South Korea", false ], [ 7, "Russia", true ], [ 7, "Japan", false ],
-  [ 8, "Norway", true ], [ 8, "South Korea", false ], [ 8, "Russia", false ], [ 8, "Japan", false ],
-  [ 9, "Norway", false ], [ 9, "South Korea", false ], [ 9, "Russia", false ], [ 9, "Japan", true ],
-  [ 10, "horse-backing riding and archery", false ], [ 10, "speed skating and rifle shooting", false ], [ 10, "cross-country skiing and rifle shooting", true ], [ 10, "freestyle skiing and ski jump", false ],
-  [ 11, "4", true ], [ 11, "3", false ], [ 11, "5", false ], [ 11, "6", false ], 
-  [ 12, "Russia", false], [ 12, "Canada", true ], [ 12, "USA", false], [ 12, "Sweden", false ], 
-  [ 13, "26", false ], [ 13, "28", true ], [ 13, "22", false ], [ 13, "32", false ],
-  [ 14, "cycling", false ], [ 14, "sailing", false ], [ 14, "running", true ], [ 14, "golf", false ],
-  [ 15, "9", false ], [ 15, "10", false ], [ 15, "8", false ], [ 15, "11", true ]
-]
-choice_list.each do |question_id, text, is_correct|
-  Choice.create!( question_id: question_id, text: text, is_correct: is_correct )
-end
+  
+quiz = Quiz.create!(name: 'Olympics', categories_attributes: categories_attributes)
