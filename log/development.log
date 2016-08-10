@@ -135,3 +135,465 @@ Migrating to CreateResults (20160809195520)
             FROM sqlite_temp_master
             WHERE name='index_results_on_user_id' AND type='index'
 [0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Olympics"], ["created_at", 2016-08-09 20:58:21 UTC], ["updated_at", 2016-08-09 20:58:21 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Olympics"], ["created_at", 2016-08-09 21:01:28 UTC], ["updated_at", 2016-08-09 21:01:28 UTC]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Olympics"], ["created_at", 2016-08-09 21:12:24 UTC], ["updated_at", 2016-08-09 21:12:24 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Olympics"], ["created_at", 2016-08-09 21:16:42 UTC], ["updated_at", 2016-08-09 21:16:42 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Olympics"], ["created_at", 2016-08-09 21:19:58 UTC], ["updated_at", 2016-08-09 21:19:58 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "History"], ["color", "blue"], ["created_at", 2016-08-09 21:19:58 UTC], ["updated_at", 2016-08-09 21:19:58 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Mascot"], ["color", "black"], ["created_at", 2016-08-09 21:19:58 UTC], ["updated_at", 2016-08-09 21:19:58 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Geography"], ["color", "red"], ["created_at", 2016-08-09 21:19:58 UTC], ["updated_at", 2016-08-09 21:19:58 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Winter Sports"], ["color", "yellow"], ["created_at", 2016-08-09 21:19:58 UTC], ["updated_at", 2016-08-09 21:19:58 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Summer Sports"], ["color", "green"], ["created_at", 2016-08-09 21:19:58 UTC], ["updated_at", 2016-08-09 21:19:58 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Olympics"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "History"], ["color", "blue"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Mascot"], ["color", "black"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Geography"], ["color", "red"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Winter Sports"], ["color", "yellow"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Summer Sports"], ["color", "green"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 1], ["text", "Which year did Vancouver host the Winter Olympics?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 1], ["text", "Which year did Beijing host the Summer Olympics?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 1], ["text", "In which Olympics did the world-famous American boxer Muhammad Ali win the light heavyweight boxing title?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 2], ["text", "Vinicius is a mix of different Brazilian ______"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 2], ["text", "Sochi had three mascots; The Hare, The Polar Bear and ______?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 2], ["text", "What kind of animal is Hodori, the mascot of Seoul 1988 Olympics?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 3], ["text", "Sochi is located in which country?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 3], ["text", "Lillehammer is locate in which country?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 3], ["text", "Nagano is located in which country?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 4], ["text", "What are the two sports that make up the Biathlon?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 4], ["text", "How many players are in a curling team?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 4], ["text", "Ice Hockey orginated from which country?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 5], ["text", "As of 2016, how many sports are played in the Summer Olympics?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 5], ["text", "The modern pentathlon comprises of pistol shooting, fencing, swimming, horse riding and ______?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 5], ["text", "Including the goalkeeper, how many football players from one team play at any given time?"], ["created_at", 2016-08-10 00:40:15 UTC], ["updated_at", 2016-08-10 00:40:15 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Olympics"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "History"], ["color", "blue"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Mascot"], ["color", "black"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Geography"], ["color", "red"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Winter Sports"], ["color", "yellow"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 1], ["subject", "Summer Sports"], ["color", "green"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 1], ["text", "Which year did Vancouver host the Winter Olympics?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 1], ["text", "Which year did Beijing host the Summer Olympics?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 1], ["text", "In which Olympics did the world-famous American boxer Muhammad Ali win the light heavyweight boxing title?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 2], ["text", "Vinicius is a mix of different Brazilian ______"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 2], ["text", "Sochi had three mascots; The Hare, The Polar Bear and ______?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 2], ["text", "What kind of animal is Hodori, the mascot of Seoul 1988 Olympics?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 3], ["text", "Sochi is located in which country?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 3], ["text", "Lillehammer is locate in which country?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 3], ["text", "Nagano is located in which country?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 4], ["text", "What are the two sports that make up the Biathlon?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 4], ["text", "How many players are in a curling team?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 4], ["text", "Ice Hockey orginated from which country?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 5], ["text", "As of 2016, how many sports are played in the Summer Olympics?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 5], ["text", "The modern pentathlon comprises of pistol shooting, fencing, swimming, horse riding and ______?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 5], ["text", "Including the goalkeeper, how many football players from one team play at any given time?"], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 1], ["text", "2010"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 1], ["text", "2006"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 1], ["text", "2014"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 1], ["text", "2002"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 2], ["text", "2000"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 1], ["text", "2008"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 2], ["text", "2004"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 2], ["text", "2012"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 3], ["text", "Tokyo 1964"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 3], ["text", "Montreal 1976"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 3], ["text", "London 1948"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 3], ["text", "Rome 1960"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 4], ["text", "cartoon characters"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 4], ["text", "animals"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 4], ["text", "celebrities"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 4], ["text", "historical figures"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 5], ["text", "The Leopard"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 5], ["text", "The Tiger"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 5], ["text", "The Seal"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 5], ["text", "The Raccoon"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 6], ["text", "Lion"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 6], ["text", "Tiger"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 6], ["text", "Bear"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 6], ["text", "Crane"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 7], ["text", "Norway"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 7], ["text", "South Korea"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 7], ["text", "Russia"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 7], ["text", "Japan"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 8], ["text", "Norway"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 8], ["text", "South Korea"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 8], ["text", "Russia"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 8], ["text", "Japan"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 9], ["text", "Norway"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 9], ["text", "South Korea"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 9], ["text", "Russia"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 9], ["text", "Japan"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 10], ["text", "horse-backing riding and archery"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 10], ["text", "speed skating and rifle shooting"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 10], ["text", "cross-country skiing and rifle shooting"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 10], ["text", "freestyle skiing and ski jump"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 11], ["text", "4"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 11], ["text", "3"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 11], ["text", "5"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 11], ["text", "6"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 12], ["text", "Russia"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 12], ["text", "Canada"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 12], ["text", "USA"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 12], ["text", "Sweden"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 13], ["text", "26"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 13], ["text", "28"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 13], ["text", "22"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 13], ["text", "32"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 14], ["text", "cycling"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 14], ["text", "sailing"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 14], ["text", "running"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 14], ["text", "golf"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 15], ["text", "9"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 15], ["text", "10"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 15], ["text", "8"], ["is_correct", false], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 15], ["text", "11"], ["is_correct", true], ["created_at", 2016-08-10 00:42:28 UTC], ["updated_at", 2016-08-10 00:42:28 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
