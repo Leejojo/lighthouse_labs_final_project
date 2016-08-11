@@ -1893,3 +1893,1172 @@ Migrating to CreateResults (20160809195520)
   [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "choices"[0m
   [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes"[0m
   [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" ORDER BY "quizzes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 5]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 12]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 32]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 125]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 126]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 127]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 128]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 32]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 33]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 129]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 130]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 131]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 132]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 33]]
+  [1m[36mChoice Load (0.0ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 34]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 133]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 134]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 135]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 136]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 34]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 12]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 13]]
+  [1m[36mChoice Load (0.0ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 35]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 137]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 138]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 139]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 140]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 35]]
+  [1m[36mChoice Load (0.0ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 36]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 141]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 142]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 143]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 144]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 36]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 37]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 145]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 146]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 147]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 148]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 37]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 13]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 14]]
+  [1m[36mChoice Load (0.0ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 38]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 149]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 150]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 151]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 152]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 38]]
+  [1m[36mChoice Load (0.0ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 39]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 153]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 154]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 155]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 156]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 39]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 40]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 157]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 158]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 159]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 160]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 40]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 14]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 15]]
+  [1m[36mChoice Load (0.0ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 41]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 161]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 162]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 163]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 164]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 41]]
+  [1m[36mChoice Load (0.0ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 42]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 165]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 166]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 167]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 168]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 42]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 43]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 169]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 170]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 171]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 172]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 43]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 15]]
+  [1m[36mQuestion Load (0.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 16]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 44]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 173]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 174]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 175]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 176]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 44]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 45]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 177]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 178]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 179]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 180]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 45]]
+  [1m[36mChoice Load (0.0ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 46]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 181]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 182]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 183]]
+  [1m[35mSQL (0.0ms)[0m  [1m[31mDELETE FROM "choices" WHERE "choices"."id" = ?[0m  [["id", 184]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "questions" WHERE "questions"."id" = ?[0m  [["id", 46]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "categories" WHERE "categories"."id" = ?[0m  [["id", 16]]
+  [1m[36mResult Load (0.3ms)[0m  [1m[34mSELECT "results".* FROM "results" WHERE "results"."quiz_id" = ?[0m  [["quiz_id", 5]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "quizzes" WHERE "quizzes"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "quizzes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Olympics"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 6], ["subject", "History"], ["color", "blue"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 17], ["text", "Which year did Vancouver host the Winter Olympics?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 47], ["text", "2010"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 47], ["text", "2006"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 47], ["text", "2014"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 47], ["text", "2002"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 17], ["text", "Which year did Beijing host the Summer Olympics?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 48], ["text", "2000"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 48], ["text", "2008"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 48], ["text", "2004"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 48], ["text", "2012"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 17], ["text", "In which Olympics did the world-famous American boxer Muhammad Ali win the light heavyweight boxing title?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 49], ["text", "Tokyo 1964"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 49], ["text", "Montreal 1976"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 49], ["text", "London 1948"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 49], ["text", "Rome 1960"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 6], ["subject", "Mascot"], ["color", "black"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 18], ["text", "Vinicius is a mix of different Brazilian ______"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 50], ["text", "cartoon characters"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 50], ["text", "animals"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 50], ["text", "celebrities"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 50], ["text", "historical figures"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 18], ["text", "Sochi had three mascots; The Hare, The Polar Bear and ______?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 51], ["text", "The Leopard"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 51], ["text", "The Tiger"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 51], ["text", "The Seal"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 51], ["text", "The Raccoon"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 18], ["text", "What kind of animal is Hodori, the mascot of Seoul 1988 Olympics?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 52], ["text", "Lion"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 52], ["text", "Tiger"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 52], ["text", "Panda Bear"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 52], ["text", "Crane"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 6], ["subject", "Geography"], ["color", "red"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 19], ["text", "Sochi is located in which country?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 53], ["text", "Norway"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 53], ["text", "South Korea"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 53], ["text", "Russia"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 53], ["text", "Japan"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 19], ["text", "Lillehammer is located in which country?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 54], ["text", "Norway"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 54], ["text", "South Korea"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 54], ["text", "Russia"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 54], ["text", "Japan"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 19], ["text", "Nagano is located in which country?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 55], ["text", "Norway"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 55], ["text", "South Korea"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 55], ["text", "Russia"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 55], ["text", "Japan"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 6], ["subject", "Winter Sports"], ["color", "yellow"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 20], ["text", "What are the two sports that make up the Biathlon?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 56], ["text", "horse-backing riding and archery"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 56], ["text", "speed skating and rifle shooting"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 56], ["text", "cross-country skiing and rifle shooting"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 56], ["text", "freestyle skiing and ski jump"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 20], ["text", "How many players are in a curling team?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 57], ["text", "4"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 57], ["text", "3"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 57], ["text", "5"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 57], ["text", "6"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 20], ["text", "Ice Hockey orginated from which country?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 58], ["text", "Russia"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 58], ["text", "Canada"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 58], ["text", "USA"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 58], ["text", "Sweden"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "categories" ("quiz_id", "subject", "color", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["quiz_id", 6], ["subject", "Summer Sports"], ["color", "green"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 21], ["text", "As of 2016, how many sports are played in the Summer Olympics?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 59], ["text", "26"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 59], ["text", "28"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 59], ["text", "22"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 59], ["text", "32"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 21], ["text", "The modern pentathlon comprises of pistol shooting, fencing, swimming, horse riding and ______?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 60], ["text", "cycling"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 60], ["text", "sailing"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 60], ["text", "running"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 60], ["text", "golf"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "questions" ("category_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["category_id", 21], ["text", "Including the goalkeeper, how many football players from one team play at any given time?"], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 61], ["text", "9"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 61], ["text", "10"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 61], ["text", "8"], ["is_correct", false], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "choices" ("question_id", "text", "is_correct", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["question_id", 61], ["text", "11"], ["is_correct", true], ["created_at", 2016-08-10 20:32:21 UTC], ["updated_at", 2016-08-10 20:32:21 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 16:37:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+Completed 200 OK in 1093162ms (Views: 0.9ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 16:55:52 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 4915ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 16:56:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::MissingTemplate (Missing template api/quizzes/{"id":6,"name":"Olympics","created_at":"2016-08-10T20:32:21.888Z","updated_at":"2016-08-10T20:32:21.888Z"}, api/api/{"id":6,"name":"Olympics","created_at":"2016-08-10T20:32:21.888Z","updated_at":"2016-08-10T20:32:21.888Z"} with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/views"
+):
+  
+app/controllers/api/quizzes_controller.rb:6:in `show'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (80.4ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 16:56:23 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 16:58:19 -0400
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:7: syntax error, unexpected '\n', expecting =>):
+  
+app/controllers/api/quizzes_controller.rb:7: syntax error, unexpected '\n', expecting =>
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.7ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.3ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 16:58:26 -0400
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('):
+  
+app/controllers/api/quizzes_controller.rb:7: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.4ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 16:58:43 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 17ms (Views: 5.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:00:01 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 11ms (Views: 0.4ms | ActiveRecord: 0.7ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/api/quizzes_controller.rb:8:in `show'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.0ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:01:32 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2016-08-10 17:36:12 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.0.0/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:36:19 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:40:13 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:41:09 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.6ms)
+
+
+  
+NameError (undefined local variable or method `quiz' for #<Api::QuizzesController:0x007f9523348d10>
+Did you mean?  @quiz):
+  
+app/controllers/api/quizzes_controller.rb:6:in `show'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.8ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:41:19 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.8ms)
+
+
+  
+NameError (undefined local variable or method `quiz' for #<Api::QuizzesController:0x007fe122e1e898>
+Did you mean?  @quiz):
+  
+app/controllers/api/quizzes_controller.rb:6:in `show'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (110.1ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:41:37 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.3ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:42:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 23ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:42:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT "quizzes".* FROM "quizzes"[0m
+Completed 200 OK in 18ms (Views: 4.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:44:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 21ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:46:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationRecord::Base):
+  
+app/models/quiz.rb:1:in `<top (required)>'
+app/controllers/api/quizzes_controller.rb:5:in `show'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.0ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:47:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 21ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:52:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.2ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.5ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:55:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+      render json: quiz(:include => {:categories})
+                                                 ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.0ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 17:57:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+      render :json => quiz.as_json(:include => {:categories})
+                                                            ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.1ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.5ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:00:02 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 21ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:04:51 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 70ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::UnknownFormat (Api::QuizzesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not… nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.0) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.0) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.0) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.0) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.0) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.0) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.0) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.7ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:05:21 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::MissingTemplate (Missing template api/quizzes/show, api/api/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/views"
+):
+  
+app/controllers/api/quizzes_controller.rb:6:in `show'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (88.9ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:06:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 20ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:29:51 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" ORDER BY "quizzes"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:35:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:8: syntax error, unexpected ',', expecting =>
+/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:10: syntax error, unexpected ')', expecting keyword_end):
+  
+app/controllers/api/quizzes_controller.rb:8: syntax error, unexpected ',', expecting =>
+app/controllers/api/quizzes_controller.rb:10: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.5ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.7ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:36:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:7: syntax error, unexpected '(', expecting ')'
+        :categories(include:
+                    ^
+/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:10: syntax error, unexpected ')', expecting keyword_end):
+  
+app/controllers/api/quizzes_controller.rb:7: syntax error, unexpected '(', expecting ')'
+app/controllers/api/quizzes_controller.rb:10: syntax error, unexpected ')', expecting keyword_end
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.5ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.9ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:39:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '{', expecting =>
+...as_json(include: {:categories {include: {:questions {include...
+...                               ^
+/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '{', expecting =>
+...egories {include: {:questions {include: {:choices}}}}})
+...                               ^
+/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+...:questions {include: {:choices}}}}})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '{', expecting =>
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '{', expecting =>
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.1ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (110.2ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:40:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+...questions: {include: {choices:}}}}})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.2ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.8ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:41:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+...questions: {include: {choices:},},},},})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.1ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.0ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:43:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 17]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 47]]
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 2.5ms)
+
+
+  
+TypeError (can't clone Symbol):
+  
+app/controllers/api/quizzes_controller.rb:6:in `show'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.9ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:44:11 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 17]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 47]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 48]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 49]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 18]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 50]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 51]]
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 52]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 19]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 53]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 54]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 55]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 20]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 56]]
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 57]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 58]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 21]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 59]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 60]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 61]]
+Completed 406 Not Acceptable in 170ms (ActiveRecord: 4.7ms)
+
+
+  
+ActionController::UnknownFormat (Api::QuizzesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not… nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.0.0) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.0) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.0) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.0) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.0) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.0) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.0) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.1.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.8ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:47:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 17]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 47]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 48]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 49]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 18]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 50]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 51]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 52]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 19]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 53]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 54]]
+  [1m[36mChoice Load (0.4ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 55]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 20]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 56]]
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 57]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 58]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 21]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 59]]
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 60]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 61]]
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 7.4ms)
+
+
+  
+NoMethodError (undefined method `log' for nil:NilClass
+Did you mean?  loop):
+  
+app/controllers/api/quizzes_controller.rb:6:in `show'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.1ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-10 18:52:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 17]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 47]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 48]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 49]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 18]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 50]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 51]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 52]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 19]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 53]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 54]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 55]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 20]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 56]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 57]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 58]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 21]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 59]]
+  [1m[36mChoice Load (2.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 60]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 61]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.18ms)
+Completed 200 OK in 129ms (Views: 7.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:08:44 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 17]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 47]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 48]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 49]]
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 18]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 50]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 51]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 52]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 19]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 53]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 54]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 55]]
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 20]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 56]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 57]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 58]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 21]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 59]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 60]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 61]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.71ms)
+Completed 200 OK in 168ms (Views: 16.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:12:23 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 17]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 47]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 48]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 49]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 18]]
+  [1m[36mChoice Load (0.4ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 50]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 51]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 52]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 19]]
+  [1m[36mChoice Load (0.5ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 53]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 54]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 55]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 20]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 56]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 57]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 58]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 21]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 59]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 60]]
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 61]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (4.48ms)
+Completed 200 OK in 72ms (Views: 4.9ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:13:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+...uestions: {include: {choices: }}}}})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (25.2ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (118.8ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:13:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+...{choices: {only: :text, :color}}}}}})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.0ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.6ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (119.0ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:14:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+...{choices: {only: :text, :color}}}}})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.3ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.4ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.2ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:15:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+...oices: {include: :text, :color}}}}}})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}', expecting =>
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.4ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.7ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:15:28 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected ',', expecting =>
+...de: {choices: {include: {:text, :color}}}}}})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected ',', expecting =>
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.5ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.3ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:15:51 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 17]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 47]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 48]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 49]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 18]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 50]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 51]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 52]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 19]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 53]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 54]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 55]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 20]]
+  [1m[36mChoice Load (0.3ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 56]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 57]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 58]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 21]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 59]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 60]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 61]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.18ms)
+Completed 200 OK in 134ms (Views: 7.0ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:20:39 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+...questions: {include: {choices:}}}}})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.3ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.1ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:21:35 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/joannalee/lighthouse/Final Project/backend/lighthouse_labs_final_project/app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+...stions" => {include: {choices:}}}}})
+...                               ^):
+  
+app/controllers/api/quizzes_controller.rb:6: syntax error, unexpected '}'
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.8ms)
+  Rendered /Users/joannalee/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (92.0ms)
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:22:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.2ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 17]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 47]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 48]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 49]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 18]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 50]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 51]]
+  [1m[36mChoice Load (0.4ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 52]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 19]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 53]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 54]]
+  [1m[36mChoice Load (2.5ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 55]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 20]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 56]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 57]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 58]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 21]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 59]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 60]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 61]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (12.11ms)
+Completed 200 OK in 149ms (Views: 22.3ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/api/quizzes/6" for ::1 at 2016-08-11 12:23:03 -0400
+Processing by Api::QuizzesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mQuiz Load (0.1ms)[0m  [1m[34mSELECT  "quizzes".* FROM "quizzes" WHERE "quizzes"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."quiz_id" = ?[0m  [["quiz_id", 6]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 17]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 47]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 48]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 49]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 18]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 50]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 51]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 52]]
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 19]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 53]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 54]]
+  [1m[36mChoice Load (0.2ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 55]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 20]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 56]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 57]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 58]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."category_id" = ?[0m  [["category_id", 21]]
+  [1m[36mChoice Load (0.5ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 59]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 60]]
+  [1m[36mChoice Load (0.1ms)[0m  [1m[34mSELECT "choices".* FROM "choices" WHERE "choices"."question_id" = ?[0m  [["question_id", 61]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (28.4ms)
+Completed 200 OK in 94ms (Views: 28.9ms | ActiveRecord: 3.2ms)
+
+
